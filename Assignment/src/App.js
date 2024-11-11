@@ -1,13 +1,11 @@
-import { Stack } from "@chakra-ui/react";
-import "./App.css";
-import BMICalculator from "./Components/BMICalculator";
-
+import './App.css';
+import Navbar from './components/Navbar/Navbar';
 function App() {
   return (
-    <>
-      <BMICalculator/>
-    </>
-  )
+    <div className="App">
+        <Navbar/>
+    </div>
+  );
 }
 
 export default App;

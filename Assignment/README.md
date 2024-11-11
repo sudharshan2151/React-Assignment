@@ -1,114 +1,70 @@
-### Use of Chakra UI is compulsory in this Assignment
+# Getting Started with Create React App
 
-## Simple Chakra UI BMI Calculator
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-#### Problem Statement
+## Available Scripts
 
-Create the following application the boilerplate code provided .
+In the project directory, you can run:
 
-## Submission Instructions [Please note]
+### `npm start`
 
-## Maximum Marks - 10
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- The Submission should not contain spaces, for example /rct-101 folder/eval will not work
-- Do not push node_modules and package_lock.json to github
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-```
- ✅ able to submit the app - 1 mark ( minimum score )
- ✅ displays the BMI calculator  - 3 mark
- ✅ calculates BMI when 'Calculate' button is clicked for Healthy - 2 mark
- ✅ calculates BMI when 'Calculate' button is clicked for Underweight - 1 mark
- ✅ calculates BMI when 'Calculate' button is clicked for Overweight- 1 marks
- ✅ resets form and remove results Grid  when 'Reset' button is clicked - 2 marks
+### `npm test`
 
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Installation
+### `npm run build`
 
-- Use node version(LTS) should be `v16.16.0`
-- Don't change/override package.json
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- Download and unzip the boilerplate file and then copy the "**contents**" of the unzipped file in the Masai Folder.
-- Navigate to the Masai Folder, in VS Code.
-- Run the following commands inside,
-  - `npm install --engine-strict`
-  - `npm start`
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-1. Libraries needs to be installed by yourself
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Not following the above instructions will lead your testcases to fail
+### `npm run eject`
 
-## Understanding Component Structure
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-- Components
-  - BMICalculator.jsx
-- App
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Problem
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Create a chakra ui simple BMI Calculator which uses below mentioned chakra ui components.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-**Note** - `Make sure you use only the given components and dont create new files and folders. Changing component name, structures might result in giving you zero marks.`
+## Learn More
 
-## Features to build
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-1. Create a react application for BMI Calculator using chakra ui components like
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```
-Button,
-Flex,
-Container,
-SimpleGrid,
-Center,
-Grid,
-Box,
-Stack,
-Text,
-Heading
-```
+### Code Splitting
 
-2. Show application name `BMI Calculator` inside `Heading` Tag
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-3. Create two button `Calculate` and `Reset` (case sensitive text)
+### Analyzing the Bundle Size
 
-4. Inside `SimpleGrid` create two input with `type - number` for weight and height
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-5. SimpleGrid should have class `bmi-form`
+### Making a Progressive Web App
 
-6. weight input should have class `weight` and height input should have class `height`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-7. Grid should have class name `bmi-result`.Show result inside `Grid` with class `bmi-value` and `bmi-status` in `Text` Tag and will be fixed 2 digits after point (Hint : use toFixed())
+### Advanced Configuration
 
-8. Show `bmi-status` shown as per result and `Text` color should be as below
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-   ```
-   height should converted into meter height = Number(height) / 100
-   bmiValue = weightValue / (heightValue * heightValue);
+### Deployment
 
-   bmi < 18.5 - Underweight - "blue"
-   bmi >=18.5 and < 25 - Healthy" - "green"
-   >=25 Overweight - "red"
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-   ```
+### `npm run build` fails to minify
 
-9. When you click on reset form will be reset and result Grid should not exist
-
-<img width="1728" alt="Screenshot 2023-01-12 at 11 20 42 AM" src="https://user-images.githubusercontent.com/103956933/220901609-7f7ebbc7-c390-405c-b3c0-17c0d1153b19.png">
-
-<img width="1728" alt="Screenshot 2023-01-12 at 11 20 42 AM" src="https://user-images.githubusercontent.com/103956933/227432823-bc138aa1-0e06-48a3-9bac-18071a3dda35.png">
-
-## General Instructions (**_IMPORTANT_**)
-
-1. Do not use Global CSS, instead use `<componentName>.module.css` convention for Css in that file.
-2. Do Not Remove `data-testid="xxxx"` from anywhere, this are used by testing tools to test your code, removal of this will lead to low score.
-3. Make sure you use only the given components and dont create new files and folders as chaging component name, structures might result in giving you zero marks
-4. Make sure you use only the given data and dont create new data, as chaging data might result in giving you zero marks.
-
-**Note** - This might not be all the things, you are free to use other components.
-
-#### General guidelines
-
-- The system on cp.masaischool.com may take between 1-20 minutes for responding,
-- so we request you to read the problem carefully and debug before itself
-- we also request you not to just submit it last minute
-- try to keep one submission at a time
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
